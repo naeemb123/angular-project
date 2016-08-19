@@ -1,0 +1,39 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <title>Suggestion Box</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/vendor/angular.min.js"></script>
+  </head>
+
+  <body ng-app="SuggestionBoxApp" ng-controller="HomeController">
+
+    <h1>{{helloWorld}}</h1>
+
+    <div class="main" ng-repeat="post in posts | orderBy: 'upvotes': true">
+      <h3>{{post.message}}</h3>
+      <ul>
+        <li>{{post.from}}</li>
+        <li>{{post.upvotes}}</li>
+        <li>{{post.commentsPopularity}}</li>
+      </ul>
+    </div>
+
+    <app-form info="posts"></app-form>
+
+
+    <!--plugins -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <!--Modules -->
+    <script src="js/app.js"></script>
+    <!--Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+    <!--Directives -->
+    <script src="js/directives/appForm.js"></script>
+    <!--Services -->
+    <script src="js/services/data.js"></script>
+
+  </body>
+
+</html>

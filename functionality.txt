@@ -1,0 +1,25 @@
+Creating a Suggestion:
+  1. As a user I want to be able to create a suggestion
+  2. As a user I want to be able to upvote suggestions
+  3. As a user I want to be able to add a comment on a suggestion
+
+  Features:
+   1. Most upvoted suggestion should appear at the top of the list
+   2. Can Upvote from the upvote Icon on the homepage as well as the suggestion page
+   3. Should be able to keep track of the number of comments for each suggestion
+   4. Dialogue should appear containing a form to allow the user to submit a suggestion/comment
+
+  Technical:
+  1. Service contains all data about suggestions and comments
+    structure: {suggestions: [{suggestion: 'text', upvote: num, comments: 'text', commentsPopularity: num}, suggestion..]}
+
+  2. homepage: '/'
+     suggestions: '/suggestions'
+     suggestionPage: '/suggestions/:suggestionId'
+
+
+  Research:
+  1. how to submit form and update the services data structure
+  2.
+
+  

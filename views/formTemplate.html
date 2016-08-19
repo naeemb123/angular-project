@@ -1,0 +1,13 @@
+<div class="addSuggestion">
+  <form ng-submit="addSuggestion()">
+    <h3>Submit Your Suggestion</h3>
+    <div class="form-group">
+      <p>{{}}</p>
+      <input type="text" class="form-control" placeholder="Submit A Suggestion" ng-model="message"></input>
+      <h3>Enter Your Name</h3>
+      <p>{{info.errorNameCheck}}</p>
+      <input type="text" class="form-control" placeholder="Enter Your Name" ng-model="from"></input>
+    </div>
+    <button type="submit" class="btn btn-primary">Suggest</button>
+  </form>
+</div>
