@@ -4,44 +4,33 @@
     <title>Suggestion Box</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/vendor/angular.min.js"></script>
+    <script src="./js/vendor/angular-route/angular-route.js"></script>
   </head>
 
   <body ng-app="SuggestionBoxApp" ng-controller="HomeController">
 
-    <h1>{{helloWorld}}</h1>
-
-    <div id="suggestions">
+    <div class="header">
       <div class="container">
-        <div class="main" ng-repeat="post in posts | orderBy: 'upvotes': true">
+        <h1>Suggestion Box</h1>
+      </div>
+    </div>
 
-          <div class="row suggestion">
-            <h3>{{post.message}}</h3>
-          </div>
-
-          <div class="row analytics">
-            <p>
-              <span class="glyphicon glyphicon-thumbs-up" ng-click="upVote($post)">
-                Likes: {{post.upvotes}} |
-                <span class="glyphicon glyphicon-comment">
-                  Comments: {{post.commentsPopularity}} <!-- Still need to add route to go comment page -->
-                </span>
-              </span>
-            </p>
-          </div>
-        </div>
+    <div class="main">
+      <div class="container">
+        <div ng-view></div>
       </div>
     </div>
 
 
-    <app-form info="posts"></app-form>
 
+    <a href="#/comments">CLICK ME</a>
 
     <!--plugins -->
 
     <!--Modules -->
     <script src="js/app.js"></script>
     <!--Controllers -->
-    <script src="js/controllers/HomeController.js"></script>
+    <script src="./js/controllers/HomeController.js"></script>
     <!--Directives -->
     <script src="js/directives/appForm.js"></script>
     <!--Services -->
