@@ -10,21 +10,34 @@
 
     <h1>{{helloWorld}}</h1>
 
-    <div class="main" ng-repeat="post in posts | orderBy: 'upvotes': true">
-      <h3>{{post.message}}</h3>
-      <ul>
-        <li>{{post.from}}</li>
-        <li>{{post.upvotes}}</li>
-        <li>{{post.commentsPopularity}}</li>
-      </ul>
+    <div id="suggestions">
+      <div class="container">
+        <div class="main" ng-repeat="post in posts | orderBy: 'upvotes': true">
+
+          <div class="row suggestion">
+            <h3>{{post.message}}</h3>
+          </div>
+
+          <div class="row analytics">
+            <p>
+              <span class="glyphicon glyphicon-thumbs-up" ng-click="upVote($post)">
+                Likes: {{post.upvotes}} |
+                <span class="glyphicon glyphicon-comment">
+                  Comments: {{post.commentsPopularity}} <!-- Still need to add route to go comment page -->
+                </span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <app-form info="posts"></app-form>
 
 
     <!--plugins -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/jquery-ui.min.js"></script>
+
     <!--Modules -->
     <script src="js/app.js"></script>
     <!--Controllers -->

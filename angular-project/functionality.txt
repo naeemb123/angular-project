@@ -1,5 +1,5 @@
 Creating a Suggestion:
-  1. As a user I want to be able to create a suggestion
+  1. As a user I want to be able to create a suggestion DONE
   2. As a user I want to be able to upvote suggestions
   3. As a user I want to be able to add a comment on a suggestion
 
@@ -21,5 +21,3 @@ Creating a Suggestion:
   Research:
   1. how to submit form and update the services data structure
   2.
-
-  
