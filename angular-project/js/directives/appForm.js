@@ -1,14 +1,29 @@
-app.directive('appForm', function(){
+app.directive('appForm', ['$location',function(location){
   return {
     restrict: 'E',
     scope: {
-      info: '='
+      info: '=',
+      information: '='
     },
     templateUrl: 'js/directives/formTemplate.html',
     link: function(scope, elem, attr){
       console.log(scope);
       scope.errorNameCheck = "";
       scope.errorSuggestionCheck = "";
+
+
+      console.log(location.path());
+
+      if (location.path() == '/'){
+        console.log("HEY");
+        scope.Title = "Submit Your Suggestion";
+      }
+      else if (location.path().includes('/comments/')) {
+        console.log("YOUR IN THE COMMENTS PAGE")
+        scope.Title = "Submit Your Comment";
+      }
+
+
 
       scope.addSuggestion = function(){
         if (typeof scope.message == "undefined" | scope.message == ''){
@@ -31,4 +46,4 @@ app.directive('appForm', function(){
     }
   }
 }
-});
+}]);

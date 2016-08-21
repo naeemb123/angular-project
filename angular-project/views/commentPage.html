@@ -1,1 +1,27 @@
-<h1>{{post.message}}</h1>
+<div class="commentsPage">
+  <div class="header">
+    <div class="container">
+      <h1>{{post.message}}</h1>
+      <div class="row">
+        <p>
+          <span class="glyphicon glyphicon-thumbs-up"  ng-click="upVote(post)"></span>
+            Likes: {{post.upvotes}} |
+            <span class="glyphicon glyphicon-comment"></span>
+              Comments: {{post.commentsPopularity}} <!-- Still need to add route to go comment page -->
+            </span>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<div class="commentsBody">
+  <div class="container-fluid">
+    <div class="comments" ng-repeat="comment in post.comments">
+      <h3>{{$index+1}} &emsp; {{comment.Cmessage}}</h3>
+    </div>
+  </div>
+
+  <app-form information="post"></app-form>
+
+</div>

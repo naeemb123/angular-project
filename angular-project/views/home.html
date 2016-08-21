@@ -3,7 +3,7 @@
     <div class="main" ng-repeat="post in posts | orderBy: 'upvotes': true">
 
       <div class="row suggestion">
-        <a href="#/comments/{{$index}}">
+        <a href="#/comments/{{posts.indexOf(post)}}">
           <h3>{{post.message}}</h3>
         </a>
       </div>
