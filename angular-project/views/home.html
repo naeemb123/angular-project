@@ -3,7 +3,9 @@
     <div class="main" ng-repeat="post in posts | orderBy: 'upvotes': true">
 
       <div class="row suggestion">
-        <h3>{{post.message}}</h3>
+        <a href="#/comments/{{$index}}">
+          <h3>{{post.message}}</h3>
+        </a>
       </div>
 
       <div class="row analytics">

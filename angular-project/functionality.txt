@@ -19,5 +19,5 @@ Creating a Suggestion:
 
 
   Research:
-  1. how to submit form and update the services data structure
-  2.
+  1. how to submit form and update the services data structure - DONE
+  2. How to use OrderBy and $index correctly for routing
