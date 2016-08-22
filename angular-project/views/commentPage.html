@@ -1,9 +1,16 @@
 <div class="commentsPage">
   <div class="header">
     <div class="container">
-      <h1>{{post.message}}</h1>
       <div class="row">
-        <p>
+        <div class="col-md-11">
+          <h1 id="commentMessage">{{post.message}}</h1>
+        </div>
+        <div class="com-md-1">
+          <span id="upvote" class="glyphicon glyphicon-thumbs-up" ng-click="upVote(post)"></span>
+        </div>
+      </div>
+      <div class="row">
+        <p id="likesAndComments">
           <span class="glyphicon glyphicon-thumbs-up"  ng-click="upVote(post)"></span>
             Likes: {{post.upvotes}} |
             <span class="glyphicon glyphicon-comment"></span>
@@ -17,14 +24,26 @@
 
 <div class="commentsBody">
   <div class="container-fluid">
-    <div class="comments" ng-repeat="comment in post.comments">
-      <h3>{{$index+1}} &emsp; {{comment.Cmessage}}</h3>
-      <h5>&emsp; - &emsp;{{comment.from}}</h5>
+    <div class="col-md-1">
+      <a href="#/"><span class="glyphicon glyphicon-chevron-left"></span></a>
     </div>
+    <div class="col-md-10">
+      <h1>{{emptyComments}}</h1>
+      <div class="comments" ng-repeat="comment in post.comments">
+        <h3>{{$index+1}} &emsp; {{comment.Cmessage}}</h3>
+        <h5>&emsp; - &emsp;{{comment.from}}</h5>
+      </div>
+    </div>
+    <div class="col-md-1">&emsp;</div>
   </div>
+
+  <div class="Commentfooter footer">
+    <div class="container">
+      <h1 class="submitComment">Submit Your Comment!</h1>
+    </div>
+</div>
+
 
   <app-comment info="post"></app-comment>
 
 </div>
-
-<a href="#/"><span class="glyphicon glyphicon-chevron-left"></span></a>

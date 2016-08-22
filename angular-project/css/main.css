@@ -53,12 +53,12 @@ border-radius: 9px;
 
 }
 
-.analytics .glyphicon-thumbs-up {
+.analytics .glyphicon-thumbs-up, .commentsPage .glyphicon-thumbs-up {
   cursor: pointer;
   outline: none;
 }
 
-.analytics .glyphicon-thumbs-up:hover {
+.analytics .glyphicon-thumbs-up:hover, .commentsPage .glyphicon-thumbs-up:hover {
   color: white;
 }
 
@@ -67,18 +67,45 @@ border-radius: 9px;
   padding: 80px 0 30px 0;
 }
 
+#createYourOwnSuggestion {
+  color: rgba(57,113,104,.7);
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+}
+
 /*This is the form part for the suggestions page*/
 
-.addSuggestion.container .form-group input {
+.addSuggestion.container .form-group input, .addComment.container .form-group input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
-  display: inline;
   margin-right: 40px;
 }
 
 .addSuggestion.container .form-group #S {
   width: 400px;
+}
+
+.addComment.container {
+    text-align: left;
+    width: 400px;
+}
+
+.commentsPage .submitComment {
+  text-align: center;
+  color: rgba(57,113,104,.3);
+  text-decoration: underline;
+  padding: 40px 0 0 0;
+}
+
+.commentsPage .commentsBody .comments {
+  border: 1px outset #fff;
+  padding: 20px 0 10px 0;
+  border-radius: 5px;
+  margin: 5px 0;
 }
 
 
@@ -87,19 +114,55 @@ border-radius: 9px;
 }
 
 .commentsPage .glyphicon-chevron-left {
-  position: absolute;
-  font-size: 5em;
-  margin-top: 5em;
-  margin-right: 10em;
-  color: Green;
+  font-size: 6em;
+  color: #fff;
+  /*position: relative;
+  right: 120px;
+  top: -400px;*/
   border-radius: 100%;
-  background-color: red;
+  background-color: rgba(17,97,255,1);
+}
+
+.commentsPage .glyphicon-chevron-left:hover {
+  color: rgba(17,97,255,1);
+  background-color: #fff;
 }
 
 .commentsPage .commentsBody .comments h3, .commentsPage .commentsBody .comments h5 {
   display: inline;
 }
 
+.commentsPage .comments h3 {
+  margin-left: 35px;
+}
+
 .commentsPage .commentsBody {
   color: #fff;
+}
+
+.commentsPage .header .col-md-11 {
+  padding: 0;
+}
+
+.commentsPage .header #upvote {
+  font-size: 90px;
+  padding-top: 15px;
+}
+
+.commentsPage .header #upvote:hover {
+  color: #fff;
+}
+
+.commentsPage .header #upvote:visited {
+  background-color: green;
+}
+
+#commentMessage {
+  color: #fff;
+}
+
+#likesAndComments {
+  color: rgba(57, 91, 88, 1);
+  font-weight: bold;
+  font-size: 20px;
 }

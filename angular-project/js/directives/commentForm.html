@@ -1,13 +1,13 @@
 <div class="addComment container">
-  <form ng-submit="addComment()">
-    <h3>{{Title}}</h3>
+  <form class="form-inline" ng-submit="addComment()">
     <div class="form-group">
       <p>{{errorCommentCheck}}</p>
       <input type="text" class="form-control" placeholder="Submit Your Comment" ng-model="comments.Cmessage"></input>
-      <h3>Name</h3>
-      <p>{{errorNameCheck}}</p>
-      <input type="text" class="form-control" placeholder="Enter Your Name" ng-model="comments.from"></input>
     </div>
-    <button type="submit" class="btn btn-primary">Submit My Comment!</button>
+    <div class="form-group">
+      <p>{{errorNameCheck}}</p>
+      <input type="text" id="C" class="form-control" placeholder="Enter Your Name" ng-model="comments.from"></input>
+    </div>
+    <button type="submit" id="Cname" class="btn btn-primary">Submit My Comment!</button>
   </form>
 </div>

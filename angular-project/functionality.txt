@@ -22,4 +22,7 @@ Creating a Suggestion:
   1. how to submit form and update the services data structure - DONE
   2. How to use OrderBy and $index correctly for routing - DONE
   3. Can you use a directive in multiple ng-views? - DONE
-  4. Can you update information in directive Template based 
+  4. Can you update information in directive Template based - DONE (Create a new directive)
+  5. How to display the back button on the left hand side of the page - DONE
+  6. How to make the $scope.emptyComments change its value and make it appear in the view
+  7. How to make the commentPage form inline
