@@ -19,9 +19,12 @@
   <div class="container-fluid">
     <div class="comments" ng-repeat="comment in post.comments">
       <h3>{{$index+1}} &emsp; {{comment.Cmessage}}</h3>
+      <h5>&emsp; - &emsp;{{comment.from}}</h5>
     </div>
   </div>
 
-  <app-form information="post"></app-form>
+  <app-comment info="post"></app-comment>
 
 </div>
+
+<a href="#/"><span class="glyphicon glyphicon-chevron-left"></span></a>

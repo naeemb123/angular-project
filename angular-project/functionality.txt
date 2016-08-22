@@ -21,5 +21,5 @@ Creating a Suggestion:
   Research:
   1. how to submit form and update the services data structure - DONE
   2. How to use OrderBy and $index correctly for routing - DONE
-  3. Can you use a directive in multiple ng-views?
-  4. 
+  3. Can you use a directive in multiple ng-views? - DONE
+  4. Can you update information in directive Template based 

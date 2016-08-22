@@ -32,16 +32,28 @@ background-color: transparent;
 .header {
   text-align: center;
   text-transform: uppercase;
-}
+  padding-bottom: 2em;
 
-.header .underline {
-  height: 1px;
-  width: 30em;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin-left: 32%;
-  margin-top: 2em;
 }
 
 .analytics .glyphicon-thumbs-up {
   cursor: pointer;
+}
+
+.commentsPage .glyphicon-chevron-left {
+  position: absolute;
+  font-size: 5em;
+  margin-top: 5em;
+  margin-right: 10em;
+  color: Green;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.commentsPage .commentsBody .comments h3, .commentsPage .commentsBody .comments h5 {
+  display: inline;
+}
+
+.commentsPage .commentsBody {
+  color: #fff;
 }

@@ -1,4 +1,4 @@
-var app = angular.module('SuggestionBoxApp', ['ngRoute']);
+var app = angular.module('SuggestionBoxApp', ['ngRoute', 'ngMaterial', 'ngMessages']);
 
 app.config(function($routeProvider){
   $routeProvider

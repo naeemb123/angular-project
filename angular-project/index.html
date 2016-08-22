@@ -5,8 +5,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <link href="./css/font-awesome-4.6.3/css/font-awesome.min.css">
-    <script src="js/vendor/angular.min.js"></script>
-    <script src="./js/vendor/angular-route/angular-route.js"></script>
+    <link href="./js/vendor/angular-material/angular-material.min.css"
   </head>
 
   <body ng-app="SuggestionBoxApp" ng-controller="HomeController">
@@ -14,7 +13,6 @@
     <div class="header">
       <div class="container">
         <h1><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Suggestion Box</h1>
-        <div class='underline col-md-12'></div>
       </div>
     </div>
 
@@ -27,6 +25,18 @@
 
 
     <!--plugins -->
+    <!-- Angular.js plugin -->
+    <script src="js/vendor/angular.min.js"></script>
+
+    <!--Angular-route plugin -->
+    <script src="./js/vendor/angular-route/angular-route.js"></script>
+    <!-- Angular Material Requires the following libraries -->
+    <script src="./js/vendor/angular-animate/angular-animate.min.js"></script>
+    <script src="./js/vendor/angular-aria/angular-aria.min.js"></script>
+    <script src="./js/vendor/angular-messages/angular-messages.min.js"></script>
+
+    <!--Angular Material Library -->
+    <script src="./js/vendor/angular-material/angular-material.min.js"></script>
 
     <!--Modules -->
     <script src="./js/app.js"></script>
@@ -35,6 +45,7 @@
     <script src="./js/controllers/CommentController.js"></script>
     <!--Directives -->
     <script src="js/directives/appForm.js"></script>
+    <script src="js/directives/commentForm.js"></script>
     <!--Services -->
     <script src="js/services/data.js"></script>
 
