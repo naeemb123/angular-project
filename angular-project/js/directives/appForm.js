@@ -9,11 +9,13 @@ app.directive('appForm', ['$location',function(location){
     link: function(scope, elem, attr){
       scope.errorNameCheck = "";
       scope.errorSuggestionCheck = "";
-      scope.Title = "Submit Your Suggestion";
 
       scope.addSuggestion = function(){
+        console.log(scope.message);
+        console.log(scope.from);
         if (typeof scope.message == "undefined" | scope.message == ''){
           scope.errorSuggestionCheck = "Woops! You forgot to enter your suggestion!";
+          console.log(scope.errorSuggestionCheck)
           return;
         }
         else if (typeof scope.from == "undefined" | scope.from == '') {
@@ -28,6 +30,8 @@ app.directive('appForm', ['$location',function(location){
               comments: [],
               commentsPopularity: 0
             })
+            scope.messsage = "";
+            scope.from = "";
         }
     }
   }

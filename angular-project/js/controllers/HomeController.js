@@ -9,16 +9,16 @@ app.controller('HomeController', ['$scope', 'data', function($scope, data, $mdDi
     post.upvotes += 1;
   }
 
-  $scope.showDialog = function(ev){
-    $mdDialog.show({
-      controller: DialogController,
-      templateUrl: './js/directives/dialog-directive.html',
-      parent: angular.element(document.body),
-     targetEvent: ev,
-     clickOutsideToClose:true,
-     fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
-    })
-  }
+  // $scope.showDialog = function(ev){
+  //   $mdDialog.show({
+  //     controller: DialogController,
+  //     templateUrl: './js/directives/dialog-directive.html',
+  //     parent: angular.element(document.body),
+  //    targetEvent: ev,
+  //    clickOutsideToClose:true,
+  //    fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
+  //   })
+  // }
 
 
 }]);

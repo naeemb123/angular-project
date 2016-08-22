@@ -1,5 +1,12 @@
 html, body {
-  background-color: rgba(24,36,66,1);
+  background-color: rgba(10,20,41,1);
+}
+
+.header.main .container h1 {
+  color: rgba(17,97,255,1);
+  font-size: 50px;
+  padding: .5em 0;
+  border-bottom: 1px dotted white;
 }
 
 #suggestions, #suggestions .row a {
@@ -12,21 +19,31 @@ html, body {
   border:
 }
 
-#suggestions .row.suggestion {
-  -webkit-transition: background .5s linear;
--moz-transition: background .5s linear;
--ms-transition: background .5s linear;
--o-transition: background .5s linear;
-transition: background .5s linear;
+#suggestions .suggestion-block {
+  -webkit-transition: background .25s linear;
+-moz-transition: background .25s linear;
+-ms-transition: background .25s linear;
+-o-transition: background .25s linear;
+transition: background .25s linear;
 background-color: transparent;
+border-radius: 9px;
 }
 
-#suggestions .row.suggestion:hover {
-  background-color: green;
+#suggestions .suggestion-block:hover {
+  background-color: rgba(57,113,104,.3);
+}
+
+#suggestions .suggestion-block {
+  border-bottom: 1px solid #fff;
+  width: 900px;
+  margin-left: 120px;
 }
 
 #suggestions .row.analytics {
   text-align: left;
+  margin-left: 20px;
+  color: rgba(57, 91, 88, 1);
+  font-weight: bold;
 }
 
 .header {
@@ -38,6 +55,35 @@ background-color: transparent;
 
 .analytics .glyphicon-thumbs-up {
   cursor: pointer;
+  outline: none;
+}
+
+.analytics .glyphicon-thumbs-up:hover {
+  color: white;
+}
+
+.footer .container {
+  text-align: center;
+  padding: 80px 0 30px 0;
+}
+
+/*This is the form part for the suggestions page*/
+
+.addSuggestion.container .form-group input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  display: inline;
+  margin-right: 40px;
+}
+
+.addSuggestion.container .form-group #S {
+  width: 400px;
+}
+
+
+.addSuggestion.container {
+  text-align: center;
 }
 
 .commentsPage .glyphicon-chevron-left {

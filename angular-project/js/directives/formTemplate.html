@@ -1,13 +1,13 @@
 <div class="addSuggestion container">
-  <form ng-submit="addSuggestion()">
-    <h3>{{Title}}</h3>
+  <form class="form-inline" ng-submit="addSuggestion()">
     <div class="form-group">
-      <p>{{errorSuggestionCheck}}</p>
-      <input type="text" class="form-control" placeholder="Submit A Suggestion" ng-model="message"></input>
-      <h3>Enter Your Name</h3>
-      <p>{{errorNameCheck}}</p>
-      <input type="text" class="form-control" placeholder="Enter Your Name" ng-model="from"></input>
+        <h4>{{scope.errorSuggestionCheck}}</h4>
+        <input type="text" id="S" class="form-control" placeholder="Submit A Suggestion" ng-model="message"></input>
     </div>
-    <button type="submit" class="btn btn-primary">Suggest</button>
+    <div class="form-group">
+      <h4>{{errorNameCheck}}</h4>
+        <input type="text" id="Sname" class="form-control" placeholder="Enter Your Name" ng-model="from"></input>
+    </div>
+      <button type="submit" class="btn btn-primary">Suggest</button
   </form>
 </div>
