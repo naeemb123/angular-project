@@ -7,6 +7,7 @@ html, body {
   font-size: 50px;
   padding: .5em 0;
   border-bottom: 1px dotted white;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 #suggestions, #suggestions .row a {
@@ -14,9 +15,9 @@ html, body {
   text-decoration: none;
 }
 
-#suggestions {
-  text-align: center;
-  border:
+#suggestions .suggestion-block h3 {
+  margin-left: 40px;
+  font-size: 23px;
 }
 
 #suggestions .suggestion-block {
@@ -27,6 +28,7 @@ html, body {
 transition: background .25s linear;
 background-color: transparent;
 border-radius: 9px;
+font-family: 'Nunito', sans-serif;
 }
 
 #suggestions .suggestion-block:hover {
@@ -78,25 +80,45 @@ border-radius: 9px;
 
 /*This is the form part for the suggestions page*/
 
-.addSuggestion.container .form-group input, .addComment.container .form-group input {
+.addSuggestion.container .form-group input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
   margin-right: 40px;
+  font-size: 18px;
+  outline: none !important;
+  color: #fff;
 }
 
 .addSuggestion.container .form-group #S {
   width: 400px;
 }
 
+/*Form part for the comments page */
+
 .addComment.container {
-    text-align: left;
-    width: 400px;
+  text-align: center;
+}
+
+.addComment .form-group input {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-right: 40px;
+  /*color: rgba(17,97,255,1);*/
+  font-size: 18px;
+  color: #fff;
+  outline: none !important;
+}
+
+.addComment .form-group #C {
+  width: 400px;
 }
 
 .commentsPage .submitComment {
   text-align: center;
-  color: rgba(57,113,104,.3);
+  color: rgba(57,113,104,.7);
+  font-size: 50px;
   text-decoration: underline;
   padding: 40px 0 0 0;
 }
@@ -116,9 +138,6 @@ border-radius: 9px;
 .commentsPage .glyphicon-chevron-left {
   font-size: 6em;
   color: #fff;
-  /*position: relative;
-  right: 120px;
-  top: -400px;*/
   border-radius: 100%;
   background-color: rgba(17,97,255,1);
 }
@@ -138,6 +157,7 @@ border-radius: 9px;
 
 .commentsPage .commentsBody {
   color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .commentsPage .header .col-md-11 {
@@ -159,10 +179,17 @@ border-radius: 9px;
 
 #commentMessage {
   color: #fff;
+  font-family: 'Mitr', sans-serif;
 }
 
 #likesAndComments {
   color: rgba(57, 91, 88, 1);
   font-weight: bold;
   font-size: 20px;
+}
+
+/*Random extra classes*/
+/*make text go yellow*/
+.go-yellow {
+  color: yellow;
 }

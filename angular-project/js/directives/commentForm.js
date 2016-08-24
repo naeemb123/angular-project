@@ -26,6 +26,8 @@ app.directive('appComment', function(){
               from: scope.comments.from
             });
             scope.info.commentsPopularity += 1;
+            scope.comments.Cmessage = "";
+            scope.comments.from = "";
         }
     }
 

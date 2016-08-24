@@ -24,5 +24,7 @@ Creating a Suggestion:
   3. Can you use a directive in multiple ng-views? - DONE
   4. Can you update information in directive Template based - DONE (Create a new directive)
   5. How to display the back button on the left hand side of the page - DONE
-  6. How to make the $scope.emptyComments change its value and make it appear in the view
-  7. How to make the commentPage form inline
+  6. How to make the commentPage form inline - DONE
+  7. How to make the $scope.emptyComments change its value and make it appear in the view
+  8. How to access the DOM elements from the controller in Angularjs
+  9. Why does my changes not update straight away in Angularjs

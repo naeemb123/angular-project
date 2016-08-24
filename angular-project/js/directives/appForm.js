@@ -29,8 +29,8 @@ app.directive('appForm', ['$location',function(location){
               upvotes: 0,
               comments: [],
               commentsPopularity: 0
-            })
-            scope.messsage = "";
+            });
+            scope.message = "";
             scope.from = "";
         }
     }
